@@ -13,10 +13,10 @@ class TaDao
      */
     private $_basePath;
     
-    public function __construct( $basePaths)
+    public function __construct( $basePath)
     {
     	parent::__construct();
-        $this->_basePath =   $basePaths;
+        $this->_basePath =   $basePath;
     }
     
     public function register( \Convo\Core\Workflow\IConvoRequest $request, $interval)
