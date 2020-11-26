@@ -41,7 +41,7 @@ class TaBotUserCounterElement extends \Convo\Core\Workflow\AbstractWorkflowCompo
      */
     public function read( \Convo\Core\Workflow\IConvoRequest $request, \Convo\Core\Workflow\IConvoResponse $response)
     {
-        $status =   $this->_taDao->register( $request, $this->_interval);
+        $status =   $this->_taDao->register( $request, $this->evaluateString( $this->_interval));
         
         $param_name =   $this->evaluateString( $this->_statusVar);
         
