@@ -15,7 +15,6 @@ class TaDao
     
     public function __construct( $basePath)
     {
-    	parent::__construct();
         $this->_basePath =   $basePath;
     }
     
