@@ -4,6 +4,10 @@ namespace Convo\Pckg\Ta;
 
 use Convo\Core\Params\IServiceParamsScope;
 
+/**
+ * @author Tole
+ * Will register user requests.
+ */
 class TaBotUserCounterElement extends \Convo\Core\Workflow\AbstractWorkflowComponent implements \Convo\Core\Workflow\IConversationElement
 {
     /**

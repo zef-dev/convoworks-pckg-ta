@@ -2,6 +2,10 @@
 
 namespace Convo\Pckg\Ta;
 
+/**
+ * @author Tole
+ * Data storage layer for storing users.
+ */
 class TaDao
 {
     /**
