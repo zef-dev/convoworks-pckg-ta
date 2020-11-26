@@ -33,7 +33,7 @@ class TaDao
             // remove self
             return $val['installation_id'] !== $request->getInstallationId();
         }));
-        
+        $count  =   count( $data);
         // register self
         $data[] =   [
             'installation_id' => $request->getInstallationId(),
@@ -42,7 +42,7 @@ class TaDao
         
         $this->_storeData( $request->getServiceId(), $data);
         
-        return 0;
+        return $count;
     }   
     
     private function _getData( $serviceId) {
