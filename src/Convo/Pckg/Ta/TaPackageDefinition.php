@@ -55,7 +55,6 @@ class TaPackageDefinition extends AbstractPackageDefinition
                         'valueType' => 'int'
                     ),
                     '_workflow' => 'read',
-                    '_system' => true,
                     '_factory' => new class ( $this->_taDao) implements \Convo\Core\Factory\IComponentFactory
                     {
                         private $_taDao;
