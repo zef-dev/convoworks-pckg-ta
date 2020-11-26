@@ -1,0 +1,9 @@
+{
+    "namespace": "convo-ta",
+    "author": "ZEF Development",
+    "email": "tole@zefdev.com",
+    "source_for": [
+        "components"
+    ],
+    "description": "Components used in the Tribes Ascend conversation workflow"
+}
