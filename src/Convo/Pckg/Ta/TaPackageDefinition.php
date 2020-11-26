@@ -64,7 +64,7 @@ class TaPackageDefinition extends AbstractPackageDefinition
                         }
                         public function createComponent( $properties, $service)
                         {
-                            return new TaDao( $properties, $this->_taDao);
+                            return new TaBotUserCounterElement( $properties, $this->_taDao);
                         }
                     }
                 )
