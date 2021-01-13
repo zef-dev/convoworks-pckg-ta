@@ -6,6 +6,7 @@
 	"keywords" : [
 		"convoworks"
 	],
+    "version": "1.0.3",
 	"license" : "MIT",
 	"require" : {
 		"php" : "^7.2",
