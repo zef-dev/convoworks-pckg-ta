@@ -29,16 +29,23 @@ class TaDao
             if ( $val['time'] < $MIN) {
                 return false;
             }
+            if ( empty( $val['installation_id'])) {
+                return false;
+            }
             
             // remove self
             return $val['installation_id'] !== $request->getInstallationId();
         }));
         $count  =   count( $data);
         // register self
-        $data[] =   [
-            'installation_id' => $request->getInstallationId(),
-            'time' => time()
-        ];
+        if ( !$request->isHealthCheck()) {
+            $data[] =   [
+                'installation_id' => $request->getInstallationId(),
+                'platform_id' => $request->getPlatformId(),
+                'time' => time()
+            ];
+        }
+
         
         $this->_storeData( $request->getServiceId(), $data);
         
